@@ -1,0 +1,200 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.navbar{
+    background-color:burlywood;
+    display: flex;
+    padding:1rem;
+    position: -webkit-sticky;
+    position:sticky;
+    top:0;
+    margin-left: auto;
+    right:0;
+    justify-content: flex-end;
+}
+.element{
+    text-align: center;
+    margin : 10px;
+}
+.navbar a{
+    padding :1rem;
+    size:1px;
+    font-size:1.5rem;
+    color:blue;
+    text-decoration: none;   
+}
+
+.navbar a:hover{
+    background-color:yellowgreen;
+}
+
+.left-title{
+    size: 30%;
+    padding: 1rem;
+    size:1rem;
+    text-decoration: none;
+    flex:1
+    /* flex-flow: row nowrap; */
+}
+
+.left-title a{
+    padding:0.5rem;
+    size:2px;
+    font-size:1.5rem;
+    color:green;
+    background-color: lightblue;
+    text-decoration: none;  
+}
+
+.left-title a:hover{
+    background-color:yellow;
+}
+
+.right-title{
+    align-items: right;
+    flex:1;
+    flex-flow: row nowrap;
+}
+
+.container{
+    display:flex;
+    max-width: 100%;
+}
+
+.container img{
+    height: 400px;
+    width : 100%;
+}
+/* 
+img { 
+    object-fit: contain;
+} */
+
+.Specialities{
+    padding:1rem;
+    /* background-color: yellow; */
+    /* align : center; // This is not working here but when i add in html file it works fine dont know why this is happening..   */
+    /* border : 3 px yellow; */
+    border: solid #000;
+    border-width:  1px;
+    margin : 20px;
+    flex : 1;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.Specialities a{
+    text-decoration: none;
+}
+
+.Specialities a:hover{
+    background-color: turquoise;
+}
+.dishname{
+    display : flex;
+}
+
+.dishname img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.price{
+    display : flex;
+}
+
+.Focus{
+    border: solid #000;
+    border-width:  1px;
+    margin : 1px;
+    padding : 10px;
+    background-color: lightgreen;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.price{
+    margin-left: auto;
+}
+
+.heading{
+    text-align: center;
+    background-color: greenyellow;
+    margin : 0;
+    padding : 15px;
+    color : brown;
+}
+
+.searchbar{
+    align : center;
+    width : 100%;
+    font-size: 20px;
+}
+
+.searchbar input{
+    font-size: large;
+}
+
+.searchbar button{
+    size: 20px;
+}
+
+
+.show{
+    display: flex;
+}
+.shown{
+    display: flex;
+    padding : 1px;
+    margin : 10px;
+    border: solid #000;
+    border-width: 1px;
+    background-color: white;
+}
+
+.shown img{
+    width : 50%;
+    height: 10rem;
+}
+
+.ask{
+    border: solid #000;
+    border-width: 1px;
+    margin : 20px;
+    padding : 10px;
+    background-color: white;
+}
+
+footer{
+    background-color: thistle;
+    padding : 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.footer-right img{
+    width : 30px;
+    height : 30px;
+}
+
+@media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+    }
+    .show{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+}
+

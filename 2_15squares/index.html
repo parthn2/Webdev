@@ -1,0 +1,38 @@
+<html>
+  <head>
+
+    <title>Fifteen Puzzle Game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="name-letters">
+          <span class="fifteen">Fifteen</span>Puzzle
+        </h1>
+      </header>
+      <label id="minutes">00</label>:<label id="seconds">00</label>
+      <strong><p style="font-size: 30px;">Enter Size of puzzle</p></strong>
+      <input type="number" id="myNumber" value="4">
+      <input type="number" id="myNumber2" value="4">
+      <button onclick="myFunction(); onClick=this.disabled=true" class="btn btn-outline-primary">Launch</button>
+      <input type="button" value = "New Game" onclick="history.go(0)" class="btn btn-outline-primary" />
+
+      <section>
+        <div id="game"></div>
+        <div id="controls">
+          <div id="solve"></div>
+          <button class="btn btn-outline-primary" id="shuffle">Reset</button>
+        </div>
+      </section>
+      <div id="overlay-2" onclick="endCongratsOverLay()">
+        <div id="text-2">Congrats 🎉</div>
+      </div>
+      <script src="Javascript.js"></script>
+    </div>
+  </body>
+</html>
